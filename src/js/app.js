@@ -1,8 +1,7 @@
-import gameBoard from "./gameBoard";
+import GameBoard from './gameBoard.js';
 
-
-const board = new gameBoard();
+const board = new GameBoard();
 window.onload = () => {
-    board.createBoard();
-    board.startGame();
+  board.createBoard();
+  board.startGame();
 };

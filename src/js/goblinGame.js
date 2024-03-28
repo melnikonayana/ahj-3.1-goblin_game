@@ -1,34 +1,34 @@
-export default class goblinGame {
+export default class GoblinGame {
+  #score;
 
-    #score;
-    #missCount;
+  #missCount;
 
-    constructor() {
-        this.#score = 0;
-        this.#missCount = 0;
+  constructor() {
+    this.#score = 0;
+    this.#missCount = 0;
+  }
+
+  shotGoblin() {
+    if (!this.isFinished()) {
+      this.#score++;
     }
+  }
 
-    shotGoblin() {
-        if (!this.isFinished()) {
-            this.#score++;
-        }
+  miss() {
+    if (!this.isFinished()) {
+      this.#missCount++;
     }
+  }
 
-    miss() {
-        if (!this.isFinished()) {
-            this.#missCount++;
-        }
-    }
+  isFinished() {
+    return this.#missCount >= 5;
+  }
 
-    isFinished() {
-        return this.#missCount >= 5;
-    }
+  get score() {
+    return this.#score;
+  }
 
-    get score() {
-        return this.#score;
-    }
-
-    get missCount() {
-        return this.#missCount;
-    }
+  get missCount() {
+    return this.#missCount;
+  }
 }

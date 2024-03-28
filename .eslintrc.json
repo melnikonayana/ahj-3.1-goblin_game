@@ -5,6 +5,9 @@
     "browser": true,
     "jest": true
   },
+  "parserOptions": {
+    "ecmaVersion": 13
+  },
   "rules": {
     "no-restricted-syntax": [
       "error",
