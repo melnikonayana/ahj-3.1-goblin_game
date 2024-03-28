@@ -20,6 +20,12 @@
     "import/extensions": [
       "error",
       "ignorePackages"
+    ],
+    "no-alert": [
+      "off"
+    ],
+    "no-plusplus": [
+      "off"
     ]
   }
 }
